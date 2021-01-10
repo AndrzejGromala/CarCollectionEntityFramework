@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CarCollectionModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblCarCollection">
+    <Key>
+      <PropertyRef Name="CarId" />
+    </Key>
+    <Property Name="CarId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CarMkModel" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Engine" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BodyType" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Transmission" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Color" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Value" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="CarCollectionModelStoreContainer">
+    <EntitySet Name="tblCarCollection" EntityType="Self.tblCarCollection" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

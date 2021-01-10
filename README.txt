@@ -1,0 +1,2 @@
+This is an ASP.NET MVC application build using Entity Framework and DataBase First model. The application allows to enter a car details and save it in a SQL DataBase. It also allows editing, adding new and deleting cars from the DataBase.
+This is work in progress and there will be other functionality added like validation of input fields. 

@@ -103,49 +103,6 @@ namespace CarCollectionWithDB.Controllers
             }
         }
 
-        //public ActionResult Delete(int id)
-        //{
-        //    CarModel crModel = new CarModel();
-        //    using (CarCollectionEntities db = new CarCollectionEntities())
-        //    {
-        //        var car = db.tblCarCollections.FirstOrDefault(x => x.CarId == id);
-        //        if (car != null)
-        //        {
-        //            crModel.CarId = car.CarId;
-        //            crModel.CarMkModel = car.CarMkModel;
-        //            crModel.Engine = car.Engine;
-        //            crModel.BodyType = car.BodyType;
-        //            crModel.Transmission = car.Transmission;
-        //            crModel.Year = car.Year;
-        //            crModel.Color = car.Color;
-        //            crModel.Value = car.Value;
-        //        }
-        //    }
-
-        //    return View(crModel);
-        //}
-
-        //[HttpPost]
-        //public ActionResult Delete(CarModel car)
-        //{
-        //    using (CarCollectionEntities db = new CarCollectionEntities())
-        //    {
-        //        var crModel = db.tblCarCollections.FirstOrDefault(x => x.CarId == car.CarId);
-        //            crModel.CarMkModel = car.CarMkModel;
-        //            crModel.Engine = car.Engine;
-        //            crModel.BodyType = car.BodyType;
-        //            crModel.Transmission = car.Transmission;
-        //            crModel.Year = car.Year;
-        //            crModel.Color = car.Color;
-        //            crModel.Value = car.Value;
-
-        //        db.Entry(crModel).State = System.Data.Entity.EntityState.Deleted;
-        //        db.SaveChanges();
-
-        //        return RedirectToAction("Index");
-                
-        //    }
-        //}
 
         public ActionResult Delete(int id)
         {
